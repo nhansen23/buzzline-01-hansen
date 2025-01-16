@@ -52,9 +52,10 @@ def process_message(log_file) -> None:
             print(f"Consumed log message: {message}")
 
             # monitor and alert on special conditions
-            if "I just loved a movie! It was funny." in message:
-                print(f"ALERT: The special message was found! \n{message}")
-                logger.warning(f"ALERT: The special message was found! \n{message}")
+            ADJECTIVES: list = ["busy", "majestic", "beautiful", "quiet", "refreshing"]
+            if "I just visited Bryce Canyon NP! It was {ADJECTIVES}." in message:
+                print(f"FUN FACT: You just visited the 17th National Park, established on February 25, 1928 \n{message}")
+                logger.warning(f"ALERT: The fun fact message was found! \n{message}")
 
 
 #####################################
