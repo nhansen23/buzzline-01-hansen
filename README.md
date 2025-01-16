@@ -1,4 +1,4 @@
-# buzzline-01-case
+# buzzline-01-hansen
 
 This project introduces streaming data. 
 The Python language includes generators - we'll use this feature to generate some streaming buzzline messages. 
@@ -56,8 +56,6 @@ The instructions are repeated in requirements.txt as this file exists in all our
 ## Task 4. Generate Streaming Data (Terminal 1)
 
 Now we'll generate some streaming data. 
-By the way - you've done 90% of the hard work before we even look at code. 
-Congratulations!
 
 In VS Code, open a terminal.
 Use the commands below to activate .venv, and run the generator as a module. 
@@ -67,13 +65,13 @@ Windows PowerShell:
 
 ```shell
 .venv\Scripts\activate
-py -m producers.basic_producer_case
+py -m producers.basic_producer_nicole
 ```
 
 Mac/Linux:
 ```zsh
 source .venv/bin/activate
-python3 -m producers.basic_producer_case
+python3 -m producers.basic_producer_nicole
 ```
 
 ## Task 5. Monitor an Active Log File (Terminal 2)
@@ -87,20 +85,15 @@ Use the commands below to activate .venv, and run the file as a module.
 Windows:
 ```shell
 .venv\Scripts\activate
-py -m consumers.basic_consumer_case.py
+py -m consumers.basic_consumer_nicole.py
 ```
 
 Mac/Linux:
 ```zsh
 source .venv/bin/activate
-python3 -m consumers.basic_consumer_case.py
+python3 -m consumers.basic_consumer_nicole.py
 ```
 
-## Save Space
-To save disk space, you can delete the .venv folder when not actively working on this project.
-We can always recreate it, activate it, and reinstall the necessary packages later. 
-Managing Python virtual environments is a necessary and valuable skill. 
-We will get a good amount of practice. 
 
 ## License
 This project is licensed under the MIT License as an example project. 
